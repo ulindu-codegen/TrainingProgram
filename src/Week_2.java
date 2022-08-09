@@ -100,7 +100,7 @@ public class Week_2 {
         double distance = earthRadius * Math.acos(Math.sin(x1) * Math.sin(x2) + Math.cos(x1) * Math.cos(x2) * Math.cos(y1 - y2));
 
         System.out.println();
-        System.out.println("Distance between two points on the surface of earth is " + distance + " km");
+        System.out.println(distance + " km");
 
     }
 
