@@ -1,4 +1,4 @@
-public class FirstProgram {
+public class Week_1 {
 
     public static void main(String[] args){
 
