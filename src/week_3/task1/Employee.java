@@ -1,4 +1,4 @@
-package week_3;
+package week_3.task1;
 
 public class Employee {
 
