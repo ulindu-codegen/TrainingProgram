@@ -13,7 +13,6 @@ public class Subject {
     private int mark4;
     private int mark5;
 
-
     public int getMark1() {
         return mark1;
     }
@@ -54,8 +53,6 @@ public class Subject {
         this.mark5 = mark5;
     }
 
-
-
     public String getSubjectOne() {
         return subjectOne;
     }
@@ -95,4 +92,5 @@ public class Subject {
     public void setSubjectFive(String subjectFive) {
         this.subjectFive = subjectFive;
     }
+
 }
