@@ -8,8 +8,6 @@ public class CalculatorTest {
 
         Scanner sc = new Scanner( System.in);
 
-        System.out.println(" --- Test Data ---");
-
         //Input the number 1
         System.out.print("Input First Number:");
         double number01=sc.nextInt();
@@ -23,6 +21,7 @@ public class CalculatorTest {
         double number03=sc.nextInt();
 
         while (number01<number02){
+
             while(number02<number03) {
                 //Input the number 1 again
                 System.out.print("Input First Number Again:");
@@ -36,16 +35,19 @@ public class CalculatorTest {
                 System.out.print("Input Third Number Again:");
                 number03=sc.nextInt();
             }
+
         }
-        Calculator calc = new Calculator(number01, number02, number03);//calc.assign(number01,number02,number03);
+
+        Calculator calc = new Calculator(number01, number02, number03);
 
         //Print the calculated values
         System.out.println();
-        System.out.println("--- Expected Output ---");
+
         calc.sum();
         calc.subtraction();
         calc.multiplication();
         calc.division();
+
     }
 
 }

@@ -1,6 +1,7 @@
 package week_4.task2;
 
 public class Achara implements BankAccount{
+
     private double balance;
 
     @Override
@@ -35,4 +36,5 @@ public class Achara implements BankAccount{
     public double getBalance() {
         return balance;
     }
+
 }

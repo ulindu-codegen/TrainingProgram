@@ -2,6 +2,7 @@ package week_4.task3;
 
 public class WrapperTest {
     public static void main(String[] args) {
+
         char c='A';
         boolean b = true;
         int i =12;
@@ -39,6 +40,7 @@ public class WrapperTest {
         long longType=longObject;
         byte byteType=byteObject;
         float floatType=floatObject;
+
         System.out.println("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
         System.out.println("Unboxing");
         System.out.println("Character varible: "+ charType);
@@ -52,4 +54,5 @@ public class WrapperTest {
         System.out.println("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
 
     }
+
 }

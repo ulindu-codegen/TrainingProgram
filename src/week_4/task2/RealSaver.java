@@ -3,6 +3,7 @@ package week_4.task2;
 public class RealSaver implements BankAccount{
 
     private double balance;
+
     @Override
     public void startAnAccount(int age) {
         if (age > 18){
@@ -35,4 +36,5 @@ public class RealSaver implements BankAccount{
     public double getBalance() {
         return balance;
     }
+
 }
