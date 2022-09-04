@@ -1,13 +1,13 @@
 package week_4.task2;
 
-public class SuperSaver implements BankAccount{
+public class SuperSaver implements BankAccount {
 
     private double balance;
 
     @Override
-    public void startAnAccount( int age) {
+    public void startAnAccount(int age) {
 
-        if (age > 18){
+        if (age > 18) {
 
             balance = 50000;
 
@@ -17,7 +17,7 @@ public class SuperSaver implements BankAccount{
 
     @Override
     public void deposit(double amount) {
-        balance= balance + amount;
+        balance = balance + amount;
     }
 
     @Override

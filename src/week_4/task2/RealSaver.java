@@ -1,19 +1,19 @@
 package week_4.task2;
 
-public class RealSaver implements BankAccount{
+public class RealSaver implements BankAccount {
 
     private double balance;
 
     @Override
     public void startAnAccount(int age) {
-        if (age > 18){
+        if (age > 18) {
             balance = 1000;
         }
     }
 
     @Override
     public void deposit(double amount) {
-        balance= balance + amount;
+        balance = balance + amount;
     }
 
     @Override

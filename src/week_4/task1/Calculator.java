@@ -18,21 +18,20 @@ public class Calculator {
     }
 
 
-    public void sum()
-    {
-        System.out.println("Sum is "+(number1+number2+number3));
+    public void sum() {
+        System.out.println("Sum is " + (number1 + number2 + number3));
     }
-    public void subtraction()
-    {
-        System.out.println("Subtraction is "+(number1-number2));
+
+    public void subtraction() {
+        System.out.println("Subtraction is " + (number1 - number2));
     }
-    public void multiplication()
-    {
-        System.out.println("Multiplication is "+(number1*number2*number3));
+
+    public void multiplication() {
+        System.out.println("Multiplication is " + (number1 * number2 * number3));
     }
-    public void division()
-    {
-        System.out.println("Division of "+number1+" and "+number2+" is "+(number1/number2));
+
+    public void division() {
+        System.out.println("Division of " + number1 + " and " + number2 + " is " + (number1 / number2));
     }
 }
 
