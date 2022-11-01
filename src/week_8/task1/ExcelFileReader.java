@@ -14,7 +14,9 @@ public class ExcelFileReader {
 
     public static void main(String args[]) throws IOException {
 
-        FileInputStream fis = new FileInputStream(new File("grades.xls"));
+        double marks = 0;
+
+        FileInputStream fis = new FileInputStream(new File("src/week_8/task1/grades.xls"));
         HSSFWorkbook wb = new HSSFWorkbook(fis);
         HSSFSheet sheet = wb.getSheetAt(0);
         FormulaEvaluator formulaEvaluator = wb.getCreationHelper().createFormulaEvaluator();
@@ -25,11 +27,12 @@ public class ExcelFileReader {
                 switch (formulaEvaluator.evaluateInCell(cell).getCellType()) {
 
                     case Cell.CELL_TYPE_NUMERIC:
-                        System.out.print(cell.getNumericCellValue() + "\t\t");
+                        System.out.print(cell.getNumericCellValue() + "\t\t\t");
+                        marks = marks + cell.getNumericCellValue();
                         break;
 
                     case Cell.CELL_TYPE_STRING:
-                        System.out.print(cell.getStringCellValue() + "\t\t");
+                        System.out.print(cell.getStringCellValue() + "\t\t\t");
                         break;
 
                 }
@@ -39,6 +42,8 @@ public class ExcelFileReader {
             System.out.println();
 
         }
+
+        System.out.println("\nTotal marks: " + marks);
 
     }
 
